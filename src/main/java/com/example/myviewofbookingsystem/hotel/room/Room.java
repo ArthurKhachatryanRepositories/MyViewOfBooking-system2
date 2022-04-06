@@ -17,13 +17,11 @@ public class Room {
 
     //  Boolean reservedForDay ;
 
-
-    Hotel hotel ;
+    @ManyToOne
+    Hotel hotel;
 
     // it has to be comfirmed by  moderator
     boolean confirmed ;
-
-
 
     String number;
     String RoomRole;
@@ -34,6 +32,5 @@ public class Room {
 
     @OneToMany
     List<Review> reviews;
-
 
 }

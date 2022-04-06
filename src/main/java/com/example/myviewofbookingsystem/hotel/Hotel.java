@@ -2,10 +2,7 @@ package com.example.myviewofbookingsystem.hotel;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -16,17 +13,19 @@ public class Hotel {
     private Long id;
 
     String name;
-    String country;
-    String city;
-    String address;
+
+    @OneToOne
+    HotelAddress hotelAddress;
+
     String IdentificationNumber;
+
     // Hotel Type;
-    String hotelStar;
+
+    int hotelStar;
 
     // it has to be comfirmed by  moderator
     boolean confirmed ;
 
     boolean isDeleted;
-
 
 }

@@ -1,6 +1,5 @@
 package com.example.myviewofbookingsystem.booking;
 
-
 import com.example.myviewofbookingsystem.hotel.room.Room;
 import com.example.myviewofbookingsystem.user.User;
 import lombok.Data;
@@ -24,6 +23,9 @@ public class Booking {
     @OneToOne
     private Room room;
 
+    private Date beginDate;
+    private Date endDate;
+
     private boolean forMe;
 
     private String name;
@@ -32,9 +34,6 @@ public class Booking {
 
     // @OneToOne
     // CartData cartData;
-
-    private Date beginDate;
-    private Date endDate;
 
     private BookingStatus bookingStatus;
 

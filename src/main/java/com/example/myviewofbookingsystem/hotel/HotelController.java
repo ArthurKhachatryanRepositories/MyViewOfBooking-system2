@@ -14,7 +14,7 @@ public class HotelController {
 
 
     @PostMapping
-    public ResponseEntity addHotel(@RequestBody Hotel hotel , long userId){
+    public ResponseEntity addHotel(@RequestBody Hotel hotel, long userId) {
         return null;
     }
 

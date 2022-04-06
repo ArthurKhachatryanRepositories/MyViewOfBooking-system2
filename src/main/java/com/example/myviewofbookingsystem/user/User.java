@@ -23,7 +23,6 @@ public class User {
     String password;
 
 
-
     @OneToMany
     private List<Booking> bookings;
 
@@ -33,9 +32,6 @@ public class User {
     // as the moderator can lock the user
     boolean locked;
 
-
-
-
     // for security
     boolean enabled;
 
@@ -43,8 +39,7 @@ public class User {
     boolean credentialsnonexpired;
 
     // for security
-    boolean acountNotExpired;
-
+    boolean accountNotExpired;
 
     boolean isDeleted;
 }
